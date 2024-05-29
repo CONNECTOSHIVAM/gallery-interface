@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+    ;
+}
+
+.main-box {
+    background-image: url(./photo.jpg);
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.btn-one {
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+    position: absolute;
+    font-weight: bold;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    position: fixed;
+    left: -800px;
+    height: 100vh;
+    width: 18rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    transition: all 0.7s linear;
+}
+
+.sidebar-menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    height: 4rem;
+}
+
+.sidebar-menu .logo a {
+    position: absolute;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 4.5rem;
+}
+
+.btn-two {
+    position: absolute;
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+    /* opacity: 0; */
+    left: 87%;
+    cursor: pointer;
+}
+
+.sidebar-menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.sidebar-menu .menu li {
+    margin-top: 5px;
+    padding: 14px 20px;
+}
+
+.sidebar-menu .menu i,
+a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.sidebar-menu .menu i {
+    padding-right: 0.5rem;
+}
+
+.sidebar-menu .social-media {
+    position: absolute;
+    bottom: 3rem;
+    left: 30%;
+    opacity: 0.5;
+}
+
+.sidebar-menu .social-media i {
+    color: white;
+    opacity: 0.5;
+    padding-right: 0.5rem;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar-menu .menu li:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    transition: all 0.5s linear;
+}
+
+.sidebar-menu .social-media i:hover {
+    color: white;
+    transform: scale(1.3);
+    opacity: 2;
+}
+
+.btn-one i:hover {
+    font-size: 2.5rem;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
+
+
+.btn-two i:hover {
+    font-size: 2.2rem;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
+
+#check:checked~.sidebar-menu {
+    left: 0;
+}
+
+#check:checked~.btn-one {
+    display: none;
+}
